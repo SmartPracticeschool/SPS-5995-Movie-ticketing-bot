@@ -1,0 +1,1259 @@
+{
+  "intents": [
+    {
+      "intent": "Book_Tickets",
+      "examples": [
+        {
+          "text": "I prefer to reserve two seats"
+        },
+        {
+          "text": "I would like to book a ticket at 3:00pm"
+        }
+      ]
+    },
+    {
+      "intent": "Enquiry",
+      "examples": [
+        {
+          "text": "Any available offers"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Greetings",
+      "examples": [
+        {
+          "text": "Good Afternoon"
+        },
+        {
+          "text": "Good Evening"
+        },
+        {
+          "text": "Good Morning"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Hi"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Movie_Availability",
+      "examples": [
+        {
+          "text": "City wise movie recommendation"
+        },
+        {
+          "text": "I would like to check the recent movie list"
+        },
+        {
+          "text": "Movie suggestions please"
+        },
+        {
+          "text": "Suggest some movies"
+        },
+        {
+          "text": "What movies are available to watch?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Thanks",
+      "examples": [
+        {
+          "text": "Thank u"
+        },
+        {
+          "text": "Thank You"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "book_tickets",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "movie",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "seats",
+          "synonyms": [
+            "berths",
+            "seat",
+            "ticket"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "time",
+          "synonyms": [
+            "03:00 pm",
+            "06:00 pm",
+            "12:00pm",
+            "12pm",
+            "3pm",
+            "6pm"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "city",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Chennai",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Delhi",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Kolkata",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Mumbai",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "enquiry",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "movie_list",
+          "synonyms": [
+            "list"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Offers",
+          "synonyms": [
+            "offer"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "greetings",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Good Afternoon",
+          "synonyms": [
+            "ga",
+            "gud noon"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good Evening",
+          "synonyms": [
+            "ge",
+            "gud evng"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good Morning",
+          "synonyms": [
+            "gm",
+            "gud mrng"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Hello",
+          "synonyms": [
+            "dear",
+            "hey"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Hi",
+          "synonyms": [
+            "aye",
+            "heya",
+            "hifi"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "movie_availability",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "City",
+          "synonyms": [
+            "area",
+            "areas",
+            "locality",
+            "region",
+            "town"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Streaming",
+          "synonyms": [
+            "accessible",
+            "broadcast",
+            "streamed",
+            "streaming",
+            "viewable"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Suggestions",
+          "synonyms": [
+            "choice",
+            "choices",
+            "options",
+            "preferences"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "movies",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Avengers",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Conjuring",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Panga",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Raazi",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Sye",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Thappad",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "X-Men",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "payment",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Credit Card",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Debit Card",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "UPI",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-date",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-time",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "thanks",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Thanks",
+          "synonyms": [
+            "ok",
+            "okay",
+            "okies",
+            "thankq",
+            "Thank you"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "time",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "03:00pm",
+          "synonyms": [
+            "3pm"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "06:00pm",
+          "synonyms": [
+            "6pm"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "09:00pm",
+          "synonyms": [
+            "9pm"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "12:00pm",
+          "synonyms": [
+            "12pm"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_9_1603059286965",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1603083224998",
+      "context": {
+        "time": "@time"
+      },
+      "conditions": "@time",
+      "event_name": "input",
+      "dialog_node": "handler_10_1603083225012"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_9_1603036416864",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1603083224457",
+      "previous_sibling": "node_7_1603084636670"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "How many seats do you want to book?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_7_1603083271139",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1603083271142",
+      "previous_sibling": "handler_6_1603083271142"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Please select INOX timings 12pm, 3pm, 6pm, 9pm. "
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1603083224998",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1603083225012",
+      "previous_sibling": "handler_10_1603083225012"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1603060147043",
+      "context": {
+        "movies": "@movies"
+      },
+      "conditions": "@movies",
+      "event_name": "input",
+      "dialog_node": "handler_5_1603060147046"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1603083292750",
+      "context": {
+        "payment": "@payment"
+      },
+      "conditions": "@payment",
+      "event_name": "input",
+      "dialog_node": "handler_5_1603083292752"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "Movie List",
+            "options": [
+              {
+                "label": "Conjuring",
+                "value": {
+                  "input": {
+                    "text": "Conjuring"
+                  }
+                }
+              },
+              {
+                "label": "X-Men",
+                "value": {
+                  "input": {
+                    "text": "X-Men"
+                  }
+                }
+              },
+              {
+                "label": "Avengers",
+                "value": {
+                  "input": {
+                    "text": "Avengers"
+                  }
+                }
+              },
+              {
+                "label": "Panga",
+                "value": {
+                  "input": {
+                    "text": "Panga"
+                  }
+                }
+              },
+              {
+                "label": "Thappad",
+                "value": {
+                  "input": {
+                    "text": "Thappad"
+                  }
+                }
+              },
+              {
+                "label": "Sye",
+                "value": {
+                  "input": {
+                    "text": "Sye"
+                  }
+                }
+              },
+              {
+                "label": "Race Gurram",
+                "value": {
+                  "input": {
+                    "text": "Race Gurram"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_10_1603060147043",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1603060147046",
+      "previous_sibling": "handler_5_1603060147046"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1603083271139",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_6_1603083271142"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "We accept UPI, credit and Debit cards. What is your mode of payment?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1603083292750",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1603083292752",
+      "previous_sibling": "handler_5_1603083292752"
+    },
+    {
+      "type": "standard",
+      "title": "Movies",
+      "output": {
+        "generic": [
+          {
+            "title": "Select a Movie",
+            "options": [
+              {
+                "label": "Conjuring",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "X-Men",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "Sye",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_3_1603042329442",
+      "conditions": "@movies",
+      "dialog_node": "node_10_1603059869204"
+    },
+    {
+      "type": "standard",
+      "title": "Greetings",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Greetings || @greetings",
+      "dialog_node": "node_1_1603027982916",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Enquiry",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "5% off on booking 3 tickets at a time"
+              },
+              {
+                "text": "10% off on UPI payments"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "conditions": "#Enquiry && @enquiry:Offers",
+      "dialog_node": "node_3_1603042329442",
+      "previous_sibling": "node_8_1603034564832"
+    },
+    {
+      "type": "standard",
+      "title": "City",
+      "parent": "node_8_1603034564832",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@city",
+      "dialog_node": "node_6_1603041071844"
+    },
+    {
+      "type": "standard",
+      "title": "Deleting Context",
+      "output": {
+        "deleted": "<?context.remove('time')?><?context.remove('number')?><?context.remove('payment')?>",
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1603036416864",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_9_1603036416864"
+      },
+      "conditions": "true",
+      "dialog_node": "node_7_1603084636670"
+    },
+    {
+      "type": "standard",
+      "title": "Movie_Availability",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Movie_Availability || @movie_availability",
+      "dialog_node": "node_8_1603034564832",
+      "previous_sibling": "node_1_1603027982916"
+    },
+    {
+      "type": "frame",
+      "title": "Book Movie Tickets",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you for your booking of $number seats at $time for $movies. You can pay the amount using $payment."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "#Book_Tickets || @book_tickets",
+      "dialog_node": "node_9_1603036416864",
+      "previous_sibling": "node_3_1603042329442"
+    },
+    {
+      "type": "standard",
+      "title": "Thanks",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you for using our service."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@thanks:Thanks",
+      "dialog_node": "node_9_1603059286965",
+      "previous_sibling": "node_9_1603036416864"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Morning"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1603027982916",
+      "conditions": "@greetings:(Good Morning)",
+      "dialog_node": "response_10_1603028206488"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Afternoon"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1603027982916",
+      "conditions": "@greetings:(Good Afternoon)",
+      "dialog_node": "response_10_1603028284649",
+      "previous_sibling": "response_10_1603028206488"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "We will get back to you soon."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1603036416864",
+      "disabled": true,
+      "conditions": "anything_else",
+      "dialog_node": "response_10_1603036844127",
+      "previous_sibling": "slot_5_1603083292750"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Conjuring"
+              },
+              {
+                "text": "Raazi"
+              },
+              {
+                "text": "Avengers"
+              },
+              {
+                "text": "Black Widow"
+              },
+              {
+                "text": "RHTDM"
+              },
+              {
+                "text": "KKKG"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_6_1603041071844",
+      "conditions": "anything_else",
+      "dialog_node": "response_10_1603041334118",
+      "previous_sibling": "response_6_1603041275020"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "List",
+            "options": [
+              {
+                "label": "Conjuring",
+                "value": {
+                  "input": {
+                    "text": "Conjuring"
+                  }
+                }
+              },
+              {
+                "label": "Chak de India",
+                "value": {
+                  "input": {
+                    "text": "Chak de India"
+                  }
+                }
+              },
+              {
+                "label": "Hello Brother",
+                "value": {
+                  "input": {
+                    "text": "Hello Brother"
+                  }
+                }
+              },
+              {
+                "label": "Kedarnath",
+                "value": {
+                  "input": {
+                    "text": "Kedarnath"
+                  }
+                }
+              },
+              {
+                "label": "Hello brother",
+                "value": {
+                  "input": {
+                    "text": "Hello brother"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_8_1603034564832",
+      "conditions": "@movie_availability:Suggestions",
+      "dialog_node": "response_3_1603035002681",
+      "previous_sibling": "response_8_1603034662054"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Evening"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1603027982916",
+      "conditions": "@greetings:(Good Evening)",
+      "dialog_node": "response_4_1603028306999",
+      "previous_sibling": "response_10_1603028284649"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1603027982916",
+      "conditions": "anything_else",
+      "dialog_node": "response_4_1603028406500",
+      "previous_sibling": "response_4_1603028306999"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Conjuring"
+              },
+              {
+                "text": "Raazi"
+              },
+              {
+                "text": "Kedarnath"
+              },
+              {
+                "text": "X-Men"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1603041071844",
+      "conditions": "@city:Kolkata",
+      "dialog_node": "response_4_1603041113431"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "source": "https://miro.medium.com/max/700/1*N0-ikjPv4RUVvS-6KCgLPg.jpeg",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_8_1603034564832",
+      "conditions": "anything_else",
+      "dialog_node": "response_6_1603035710125",
+      "previous_sibling": "response_3_1603035002681"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Avengers "
+              },
+              {
+                "text": "Batman"
+              },
+              {
+                "text": "Superman"
+              },
+              {
+                "text": "Black Widow"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_6_1603041071844",
+      "conditions": "@city:Delhi",
+      "dialog_node": "response_6_1603041275020",
+      "previous_sibling": "response_7_1603041182720"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Avengers"
+              },
+              {
+                "text": "Race Gurram"
+              },
+              {
+                "text": "Rakhi"
+              },
+              {
+                "text": "Kabhi Khushi Kabhi Gham"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_6_1603041071844",
+      "conditions": "@city:Chennai",
+      "dialog_node": "response_7_1603041182720",
+      "previous_sibling": "response_4_1603041113431"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Kolkata",
+            "options": [
+              {
+                "label": "Conjuring",
+                "value": {
+                  "input": {
+                    "text": "Conjuring"
+                  }
+                }
+              },
+              {
+                "label": "Kedarnath",
+                "value": {
+                  "input": {
+                    "text": "Kedarnath"
+                  }
+                }
+              },
+              {
+                "label": "Shudh Desi Romance",
+                "value": {
+                  "input": {
+                    "text": "Shudh Desi Romance"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          },
+          {
+            "title": "Mumbai",
+            "options": [
+              {
+                "label": "Hello Brother",
+                "value": {
+                  "input": {
+                    "text": "Hello Brother"
+                  }
+                }
+              },
+              {
+                "label": "Raazi",
+                "value": {
+                  "input": {
+                    "text": "Raazi"
+                  }
+                }
+              },
+              {
+                "label": "Avengers Endgame",
+                "value": {
+                  "input": {
+                    "text": "Avengers Endgame"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          },
+          {
+            "title": "Chennai",
+            "options": [
+              {
+                "label": "Race Gurram",
+                "value": {
+                  "input": {
+                    "text": "Race Gurram"
+                  }
+                }
+              },
+              {
+                "label": "Sye",
+                "value": {
+                  "input": {
+                    "text": "Sye"
+                  }
+                }
+              },
+              {
+                "label": "Gharshana",
+                "value": {
+                  "input": {
+                    "text": "Gharshana"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          },
+          {
+            "title": "Delhi",
+            "options": [
+              {
+                "label": "Thappad",
+                "value": {
+                  "input": {
+                    "text": "Thappad"
+                  }
+                }
+              },
+              {
+                "label": "Panga",
+                "value": {
+                  "input": {
+                    "text": "Panga"
+                  }
+                }
+              },
+              {
+                "label": "Dil Bechara",
+                "value": {
+                  "input": {
+                    "text": "Dil Bechara"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_8_1603034564832",
+      "conditions": "@movie_availability:City",
+      "dialog_node": "response_8_1603034662054",
+      "previous_sibling": "node_6_1603041071844"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1603036416864",
+      "disabled": true,
+      "conditions": "@book_tickets:time",
+      "dialog_node": "response_9_1603083186982",
+      "previous_sibling": "response_10_1603036844127"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_9_1603036416864",
+      "variable": "$movies",
+      "dialog_node": "slot_10_1603060147043",
+      "previous_sibling": "handler_1_1603083224457"
+    },
+    {
+      "type": "slot",
+      "parent": "node_9_1603036416864",
+      "variable": "$time",
+      "dialog_node": "slot_3_1603083224998",
+      "previous_sibling": "slot_10_1603060147043"
+    },
+    {
+      "type": "slot",
+      "parent": "node_9_1603036416864",
+      "variable": "$payment",
+      "dialog_node": "slot_5_1603083292750",
+      "previous_sibling": "slot_7_1603083271139"
+    },
+    {
+      "type": "slot",
+      "parent": "node_9_1603036416864",
+      "variable": "$number",
+      "dialog_node": "slot_7_1603083271139",
+      "previous_sibling": "slot_3_1603083224998"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. I am a Movie Bot, I can recommend movies according to your interest. How may I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "My First Skill",
+  "language": "en",
+  "description": ""
+}
